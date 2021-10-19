@@ -1,0 +1,24 @@
+[alias]
+	co = checkout
+	st = status
+	ci = commit
+	cm = "commit -m"
+	cam = "commit --amend"
+	pso = "push origin"
+	pfo = "push -f origin"
+	plo = "pull origin"
+	b = "branch"
+	ba = "branch -a"
+[user]
+	email = williapb@gmail.com
+	name = William
+[core]
+	excludesfile = /Users/williampeer/.gitignore_global
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path =
+[mergetool "sourcetree"]
+	cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+[pull]
+	ff = only
